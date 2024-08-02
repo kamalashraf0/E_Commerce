@@ -1,0 +1,19 @@
+<!-- src/app/sign-in/sign-in.component.html -->
+<div class="flex justify-center items-center h-screen">
+  <div class="bg-white p-6 rounded shadow-md w-full max-w-sm">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Sign In</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-4">
+        <label for="username" class="block text-gray-700">Username</label>
+        <input type="text" id="username" [(ngModel)]="username" name="username" class="w-full px-3 py-2 border rounded" required>
+      </div>
+      <div class="mb-6">
+        <label for="password" class="block text-gray-700">Password</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" class="w-full px-3 py-2 border rounded" required>
+      </div>
+      <div class="flex justify-center">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Sign In</button>
+      </div>
+    </form>
+  </div>
+</div>
